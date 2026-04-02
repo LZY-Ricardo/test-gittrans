@@ -1,0 +1,18 @@
+repo: LZY-Ricardo/test-gittrans
+baseBranch: main
+baseLanguage: zh-CN
+targetLanguages:
+  - en
+include:
+  - blog_intro_1.md
+  - blog_intro_2.md
+ignoreFile: .github-global-ignore
+outputRoot: translations
+model:
+  provider: openrouter
+  id: openai/gpt-5.2
+readmeNavigation:
+  enabled: true
+pullRequest:
+  branch: gittrans/main
+  titleTemplate: "docs: update translations"
