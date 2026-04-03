@@ -1,0 +1,20 @@
+repo: LZY-Ricardo/test-gittrans
+baseBranch: main
+baseLanguage: zh-CN
+targetLanguages:
+  - zh-TW
+  - ja
+include:
+  - blog_intro_1.md
+  - blog_intro_2.md
+  - README.md
+ignoreFile: .github-global-ignore
+outputRoot: translations
+model:
+  provider: openrouter
+  id: openrouter/auto
+readmeNavigation:
+  enabled: true
+pullRequest:
+  branch: gittrans/main
+  titleTemplate: "docs: update translations"
